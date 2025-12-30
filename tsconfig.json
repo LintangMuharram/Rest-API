@@ -8,7 +8,7 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "commonjs",
-    "target": "esnext",
+    "target": "es2016",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -24,7 +24,24 @@
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ],
+
+    "resolveJsonModule": true,
+
     // Style Options
+    "noImplicitAny": true,
     // "noImplicitReturns": true,
     // "noImplicitOverride": true,
     // "noUnusedLocals": true,
@@ -35,7 +52,6 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
