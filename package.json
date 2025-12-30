@@ -1,0 +1,21 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "Rest API",
+  "license": "ISC",
+  "author": "Lintang Muharram",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc -w",
+    "dev": "npx nodemon",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
