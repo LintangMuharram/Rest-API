@@ -1,0 +1,13 @@
+#dependencies
+/node_mpdules
+
+#testing
+/coverage
+
+#production
+/build
+/dist
+
+#misc
+DS_Store
+.package-lock.json
